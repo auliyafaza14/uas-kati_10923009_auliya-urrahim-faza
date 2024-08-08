@@ -1,0 +1,291 @@
+<html>
+
+<head>
+  <title>MAINTENANCE FORMAT</title>
+  <style>
+    body {
+      font-family: monaco, times;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #800000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #808080;
+      padding: 5px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+
+    .sidebar {
+      width: 150px;
+      height: 120%;
+      background-color: #e2e2e2;
+      float: left;
+      padding-left: 20px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .sidebar li a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 50px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+      clear: both;
+    }
+
+    .form-container {
+      margin: 0 auto;
+    }
+
+    .form-container label,
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    .submit-button {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+
+    .submit-button:active {
+      background-color: #3e8e41;
+    }
+
+    .invoice-container {
+      display: none;
+      margin-top: 20px;
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AUTOLINE NANO CERAMIC COATING</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Testimonial.html">Testimonial</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar">
+    <h3>Types of maintenance :</h3>
+    <ul>
+      <li><a href="Coating.html">Coating</a></li>
+      <li><a href="GlassProtec.html">Glass Protection</a></li>
+      <li><a href="RustProtec.html">Rust Protection</a></li>
+      <li><a href="SoundProtec.html">Sound Protection</a></li>
+      <li><a href="PaintProtec.html">Paint Protection</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Coating Order Form</h2>
+    <div class="form-container">
+      <form id="maintenanceForm">
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="NoId">No. ID (KTP/SIM/Passport) :</label>
+          <input type="text" id="NoId" name="NoId" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Addres">Address :</label>
+          <input type="text" id="Addres" name="Addres" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Phone">Phone :</label>
+          <input type="text" id="Phone" name="Phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="TypeOfCar">Type of car (ex. Honda HRV) :</label>
+          <input type="text" id="TypeOfCar" name="TypeOfCar" required>
+        </div>
+
+        <div class="form-group">
+          <label for="CarSize">Size of car</label>
+          <select id="CarSize" name="CarSize" required>
+            <option value="">- Choose Your Car Size! -</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="ExtraLarge">Extra Large</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="MaintenanceType">Maintenance</label>
+          <select id="MaintenanceType" name="MaintenanceType" required>
+            <option value="">- Choose The Type Of Car Maintenance! -</option>
+            <option value="GlassProtection">Glass Protection</option>
+            <option value="RustProtection">Rust Protection</option>
+            <option value="SoundProtection">Sound Protection</option>
+            <option value="PaintProtection">Paint Protection</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="PaymentMethod">Pay Method</label>
+          <select id="PaymentMethod" name="PaymentMethod" required>
+            <option value="">- Choose Your Payment! -</option>
+            <option value="TransferBank">Transfer Bank</option>
+            <option value="EWallet">E-wallet</option>
+            <option value="CreditCards">Credit Cards</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Cash">Cash</option>
+            <option value="QrCode">Qr Code</option>
+            <option value="MobileBanking">Mobile Banking</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+
+    <div id="invoice" class="invoice-container">
+      <h2>Invoice</h2>
+      <p><strong>Name:</strong> <span id="invoiceName"></span></p>
+      <p><strong>No. ID:</strong> <span id="invoiceNoId"></span></p>
+      <p><strong>Address:</strong> <span id="invoiceAddress"></span></p>
+      <p><strong>Phone:</strong> <span id="invoicePhone"></span></p>
+      <p><strong>Type of car:</strong> <span id="invoiceTypeOfCar"></span></p>
+      <p><strong>Size of car:</strong> <span id="invoiceCarSize"></span></p>
+      <p><strong>Maintenance Type:</strong> <span id="invoiceMaintenanceType"></span></p>
+      <p><strong>Payment Method:</strong> <span id="invoicePaymentMethod"></span></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2024 Auliya Urrahim Faza | All Rights Reserved
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("maintenanceForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = {
+          name: form.name.value,
+          NoId: form.NoId.value,
+          Addres: form.Addres.value,
+          Phone: form.Phone.value,
+          TypeOfCar: form.TypeOfCar.value,
+          CarSize: form.CarSize.value,
+          MaintenanceType: form.MaintenanceType.value,
+          PaymentMethod: form.PaymentMethod.value
+        };
+
+        document.getElementById("invoiceName").textContent = formData.name;
+    <!-- document.getElementById("invoiceNoId").textContent = formData.NoId; -->
+    document.getElementById("invoiceAddress").textContent = formData.Addres;
+    document.getElementById("invoicePhone").textContent = formData.Phone;
+    document.getElementById("invoiceTypeOfCar").textContent = formData.TypeOfCar;
+    document.getElementById("invoiceCarSize").textContent = formData.CarSize;
+    document.getElementById("invoiceMaintenanceType").textContent = formData.MaintenanceType;
+    document.getElementById("invoicePaymentMethod").textContent = formData.PaymentMethod;
+
+    document.getElementById("invoice").style.display = "block";
+  });
+});
+  </script>
+</body>
+</html>

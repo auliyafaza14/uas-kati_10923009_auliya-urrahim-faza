@@ -1,0 +1,290 @@
+<html>
+
+<head>
+  <title>COATING FORMAT</title>
+  <style>
+    body {
+      font-family: monaco, times;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #800000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #808080;
+      padding: 5px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+
+    .sidebar {
+      width: 150px;
+      height: 150%;
+      background-color: #e2e2e2;
+      float: left;
+      padding-left: 20px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sidebar li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .sidebar li a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+
+    .content {
+      float: left;
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 50px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #000000;
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+      clear: both;
+    }
+
+    .form-container {
+      margin: 0 auto;
+    }
+
+    .form-container label,
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    .submit-button {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+
+    .submit-button:active {
+      background-color: #3e8e41;
+    }
+
+    .invoice-container {
+      display: none;
+      margin-top: 20px;
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AUTOLINE NANO CERAMIC COATING</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Testimonial.html">Testimonial</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar">
+    <h3>Types of maintenance :</h3>
+    <ul>
+      <li><a href="Coating.html">Coating</a></li>
+      <li><a href="GlassProtec.html">Glass Protection</a></li>
+      <li><a href="RustProtec.html">Rust Protection</a></li>
+      <li><a href="SoundProtec.html">Sound Protection</a></li>
+      <li><a href="PaintProtec.html">Paint Protection</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Coating Order Form</h2>
+    <div class="form-container">
+      <form id="coatingForm">
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="id">No. ID (KTP/SIM/Passport) :</label>
+          <input type="text" id="id" name="id" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address :</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone :</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="carType">Type of car (ex. Honda HRV) :</label>
+          <input type="text" id="carType" name="carType" required>
+        </div>
+
+        <div class="form-group">
+          <label for="carSize">Size of car</label>
+          <select id="carSize" name="carSize" required>
+            <option value="">- Choose Your Car Size! -</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Extra Large">Extra Large</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="layers">Layers</label>
+          <select id="layers" name="layers" required>
+            <option value="">- Select A Layers! -</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Pay Method</label>
+          <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">- Choose Your Payment! -</option>
+            <option value="Transfer Bank">Transfer Bank</option>
+            <option value="E-wallet">E-wallet</option>
+            <option value="Credit Cards">Credit Cards</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Cash">Cash</option>
+            <option value="Qr Code">Qr Code</option>
+            <option value="Mobile Banking">Mobile Banking</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+    
+    <div id="invoice" class="invoice-container">
+      <h2>Invoice</h2>
+      <p><strong>Name:</strong> <span id="invoiceName"></span></p>
+      <p><strong>ID:</strong> <span id="invoiceId"></span></p>
+      <p><strong>Address:</strong> <span id="invoiceAddress"></span></p>
+      <p><strong>Phone:</strong> <span id="invoicePhone"></span></p>
+      <p><strong>Type of car:</strong> <span id="invoiceCarType"></span></p>
+      <p><strong>Size of car:</strong> <span id="invoiceCarSize"></span></p>
+      <p><strong>Layers:</strong> <span id="invoiceLayers"></span></p>
+      <p><strong>Payment Method:</strong> <span id="invoicePaymentMethod"></span></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2024 Auliya Urrahim Faza | All Rights Reserved
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("coatingForm");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = {
+          name: form.name.value,
+          id: form.id.value,
+          address: form.address.value,
+          phone: form.phone.value,
+          carType: form.carType.value,
+		  <!-- carSize: form.carSize.value, -->
+		  layers: form.layers.value,
+		  paymentMethod: form.paymentMethod.value
+    };
+
+    document.getElementById("invoiceName").textContent = formData.name;
+    document.getElementById("invoiceId").textContent = formData.id;
+    document.getElementById("invoiceAddress").textContent = formData.address;
+    document.getElementById("invoicePhone").textContent = formData.phone;
+    document.getElementById("invoiceCarType").textContent = formData.carType;
+    document.getElementById("invoiceCarSize").textContent = formData.carSize;
+    document.getElementById("invoiceLayers").textContent = formData.layers;
+    document.getElementById("invoicePaymentMethod").textContent = formData.paymentMethod;
+
+    document.getElementById("invoice").style.display = "block";
+  });
+});
+  </script>
+</body>
+</html>
